@@ -3,6 +3,25 @@
     border: 1px solid black;
     margin: auto;
 }
+.Infotext{
+    font-size: 120%;
+    letter-spacing: 5px;
+}
+
+#Correct{
+    font-size: 130%;
+    color: green;
+}
+
+#Wrong{
+    font-size: 130%;
+    color: red;
+}
+
+#Timer{
+    float: right;
+    margin-right: 20px;
+}
 
 #RandomChar{
     font-size:700%;
@@ -11,4 +30,17 @@
     text-align: center;
     padding: 20px;
     border: 1px solid black;
+}
+
+.Buttons{
+    border:1px solid black;
+    float: left;
+    padding: 50px;
+}
+
+.ButtonsNewLine{
+    color: red;
+    border:1px solid black;
+    float: left;
+    padding: 50px;
 }
