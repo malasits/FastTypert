@@ -7,3 +7,14 @@ function SelectCharacter() {
     var rnd = Math.floor(Math.random() * Characters.length);
     document.getElementById("RandomChar").innerHTML = Characters[rnd];
 }
+
+function Keyboard() {
+    var insertkeyboard = "";
+
+    if(1 == 1){
+        for (var i = 9; i < 43; i++) {
+            insertkeyboard += "<div>" + Characters[i] + "</div>";
+        }
+    }
+    document.getElementById("Keyboard").innerHTML = insertkeyboard;
+}

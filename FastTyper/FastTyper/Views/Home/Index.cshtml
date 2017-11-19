@@ -4,11 +4,14 @@
 
 <div id="Content">
     <div id="RandomChar"></div>
-    <div id="KeyBoard">
-        <span class="Buttons"></span>
+    <div id="Keyboard">
+        <script>
+            Keyboard();
+        </script>
     </div>
 
     <script>
         SelectCharacter();
+        setInterval(SelectCharacter, 3000);
     </script>
 </div>
