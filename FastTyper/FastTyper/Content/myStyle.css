@@ -41,6 +41,6 @@
 .ButtonsNewLine{
     color: red;
     border:1px solid black;
-    float: left;
+    display:block;
     padding: 50px;
 }

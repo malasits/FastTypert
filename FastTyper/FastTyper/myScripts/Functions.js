@@ -17,7 +17,7 @@ function Keyboard() {
 
     if(1 == 1){
         for (var i = 0; i < 44; i++) {
-            if (i == 12) {
+            if (i === 12 || i === 24 ||i === 36) {
                 insertkeyboard += "<div class='ButtonsNewLine' id ='btn" + i + "'>" + Characters[i] + "</div>";
             }
             else {
