@@ -34,13 +34,19 @@
 
 .Buttons{
     border:1px solid black;
-    float: left;
+    text-align:center;
+    width: 135px;
     padding: 50px;
+    color: rebeccapurple;
+    font-size: 250%;
+    font-weight: bold;
 }
 
-.ButtonsNewLine{
-    color: red;
-    border:1px solid black;
-    display:block;
-    padding: 50px;
+table{
+    text-align: center;
+    margin: auto;
+}
+
+#Keyboard{
+    margin-top:30px;
 }

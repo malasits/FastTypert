@@ -12,20 +12,41 @@ function SelectCharacter() {
     document.getElementById("RandomChar").innerHTML = Characters[rnd];
 }
 
-function Keyboard() {
-    var insertkeyboard = "";
+function Keyboard(keyboardStyle) {
+    var insertkeyboard = "<table><tr>";
 
-    if(1 == 1){
+    if (keyboardStyle === 1) {
         for (var i = 0; i < 44; i++) {
             if (i === 12 || i === 24 ||i === 36) {
-                insertkeyboard += "<div class='ButtonsNewLine' id ='btn" + i + "'>" + Characters[i] + "</div>";
+                insertkeyboard += "<td class='Buttons' id ='btn" + i + "'>" + Characters[i] + "</td></tr></table><table><tr>";
             }
             else {
-                insertkeyboard += "<div class='Buttons' id ='btn" + i + "'>" + Characters[i] + "</div>";
+                insertkeyboard += "<td class='Buttons' id ='btn" + i + "'>" + Characters[i] + "</td>";
             }           
         }
+        insertkeyboard += "</tr></table>";
+    }
+    else {//Shift is down
+        for (var i = 0; i < 10; i++) {
+            insertkeyboard += "<td class='Buttons' id ='btn" + i + "'>" + Characters[i] + "</td>";
+        }
+        for (var i = 44; i < Characters.length; i++) {
+            if (i === 46 ||i === 58 || i === 70) {
+                insertkeyboard += "<td class='Buttons' id ='btn" + i + "'>" + Characters[i] + "</td></tr></table><table><tr>";
+            }
+            else {
+                insertkeyboard += "<td class='Buttons' id ='btn" + i + "'>" + Characters[i] + "</td>";
+            }
+        }
+        insertkeyboard += "</tr></table>";
     }
     document.getElementById("Keyboard").innerHTML = insertkeyboard;
+}
+
+function isShiftDown(event) {
+    if (event.shiftKey) {
+        Keyboard(2);
+    }
 }
 
 function Timer() {
