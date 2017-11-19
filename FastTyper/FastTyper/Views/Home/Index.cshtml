@@ -3,6 +3,17 @@
 }
 
 <div id="Content">
+    <div id="Infopanel">
+        <span class="Infotext">Találat: </span>
+        <span class="Infotext" id="Correct">0</span>
+        <span class="Infotext">Hiba: </span>
+        <span class="Infotext" id="Wrong">0</span>
+        <span class="Infotext" id="Timer">0 : 0</span>
+        <script>
+            //Timer(Start_time);
+            setInterval(Timer, 1000);
+        </script>
+    </div>
     <div id="RandomChar"></div>
     <div id="Keyboard">
         <script>
@@ -12,6 +23,6 @@
 
     <script>
         SelectCharacter();
-        setInterval(SelectCharacter, 3000);
+        setInterval(SelectCharacter, 1000);
     </script>
 </div>

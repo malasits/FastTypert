@@ -1,3 +1,14 @@
-﻿body {
-    
+﻿#Content{
+    width: 90%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#RandomChar{
+    font-size:700%;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
 }
